@@ -1,0 +1,227 @@
+/* body sampingan */
+body {
+    margin: 0;
+    background-image: url(img/marshmallowy_mweadows.png);
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+/* content */
+.content {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-size: cover;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Left Content */
+.left-content {
+    flex: 2;
+}
+
+.left-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Profile Container */
+.profile {
+    background-color: #2a475e;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+/* Header (Profile Info) */
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c7d5e030;
+    padding-bottom: 20px;
+}
+
+.header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    margin-right: 25px;
+    border: 2px solid #66c0f4;
+}
+
+.info h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #66c0f4;
+}
+
+.desc {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #acb2b8;
+}
+
+/* Favourite Cards */
+.favourite-section h2 {
+    color: #c7d5e0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.favourite-list {
+    display: flex;
+    align-items: center;
+    background-color: #2a475e;
+    border-radius: 10px;
+    padding: 15px;
+    gap: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+    margin-bottom: 15px;
+}
+
+.favourite-list:hover {
+    transform: scale(1.02);
+}
+
+.favourite-list img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    border: 2px solid #66c0f4;
+}
+
+.favorite-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #66c0f4;
+}
+
+/* Right Panel */
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Info Box (Bio) */
+.info-box {
+    background-color: #2a475e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    display: flex;
+    gap: 15px;
+}
+
+.info-box img {
+    border: 2px solid #66c0f4;
+    width: 160px;
+    height: 120px;
+    margin: 10px 0;
+}
+
+.info-text p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #c7d5e0;
+}
+
+/* Social Network */
+.social-network {
+    background-color: #2a475e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.social-network h3 {
+    margin: 0 0 15px 0;
+    color: #66c0f4;
+    font-size: 18px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #66c0f4;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1b2838;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #3b4a5a;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #66c0f4;
+    color: #1b2838;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+    }
+
+    .favourite-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .favourite-list img {
+        width: 100px;
+        height: 100px;
+        height: auto;
+    }
+
+    .favorite-card h3 {
+        margin-top: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header img {
+        margin-bottom: 15px;
+    }
+}
+
